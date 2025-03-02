@@ -22,3 +22,7 @@ include:
     shield: corny_left
   - board: seeeduino_xiao_ble
     shield: corny_right
+  - board: seeeduino_xiao_ble
+    shield: corny_dongle
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
