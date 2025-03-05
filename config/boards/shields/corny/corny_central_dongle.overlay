@@ -52,18 +52,15 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(3,5) RC(3,6) RC(2,6) RC(2,7) 
         triggers-per-rotation = <20>;
     };
 
-// Led
-&gpio0 {
-    led_run: led_run {
-        compatible = "gpio-leds";
-        led_0: led_0 {
-            gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;  // GPIO13 for onboard LED
-            label = "LED_RUN";
-            default-state = "on";  // Ensure the LED is always on
+    &gpio0 {
+        led_run: led_run {
+            compatible = "gpio-leds";
+            led_0: led_0 {
+                gpios = <&gpio0 13 GPIO_ACTIVE_LOW>;  // GPIO13 for onboard LED
+                label = "LED_RUN";
+                default-state = "on";  // Ensure the LED is always on
+            };
         };
     };
-};
-
-
 
 };
