@@ -8,8 +8,9 @@
 #include <dt-bindings/zmk/pointing.h>
 
 &mmv {
-    acceleration-exponent = <2>;
-    time-to-max-speed-ms = <250>;
+    acceleration-exponent = <1>;
+    time-to-max-speed-ms = <500>;
+    delay-ms = <0>;
 };
 
 / {
@@ -57,7 +58,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <165>;
+            tapping-term-ms = <175>;
             quick-tap-ms = <30>;
             require-prior-idle-ms = <100>;
             flavor = "balanced";
@@ -70,7 +71,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <165>;
+            tapping-term-ms = <175>;
             quick-tap-ms = <30>;
             require-prior-idle-ms = <100>;
             flavor = "balanced";
@@ -85,7 +86,7 @@
                 <&ht LS(LC(LG(N4))) LS(LG(N2))>,
                 <&ht LG(LS(N5)) LG(LS(N4))>;
 
-            tapping-term-ms = <165>;
+            tapping-term-ms = <185>;
         };
 
         it_e: it_e {
@@ -106,7 +107,7 @@
             #binding-cells = <0>;
             bindings = <&kp LA(LS(O))>, <&kp LA(LS(D))>, <&kp LA(LS(J))>;
 
-            tapping-term-ms = <165>;
+            tapping-term-ms = <185>;
         };
 
         cat_nav_sh: cat_nav_sh {
