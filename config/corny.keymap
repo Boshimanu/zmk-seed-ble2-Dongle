@@ -362,7 +362,7 @@
 
         Move {
             bindings = <
-&trans       &trans  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_DOWN   &trans                       &kp DEL       &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &trans    &kp PAGE_UP
+&trans       &trans  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &trans                       &kp DEL       &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &trans    &kp PAGE_UP
 &trans       &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp ENTER                    &kp LG(UP)    &kp LEFT      &kp DOWN  &kp RIGHT      &kp INS   &kp PAGE_DOWN
 &cat_sh_hml  &trans  &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &kp SPACE  &none  &kp LG(A)  &kp LG(DOWN)  &kp LG(LEFT)  &trans    &kp LG(RIGHT)  &kp HOME  &kp END
                                      &trans          &mkp LCLK        &mkp RCLK                    &trans        &trans        &trans
