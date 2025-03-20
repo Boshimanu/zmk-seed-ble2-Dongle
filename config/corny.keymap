@@ -200,7 +200,7 @@
         it_egrav: it_egrav {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LC(LG(I))) &kp LEFT_BRACKET &kp LA(LG(LC(E)))>;
+            bindings = <&kp LA(GRAVE) &kp E>;
             label = "IT_EGRAV";
             wait-ms = <30>;
         };
@@ -208,7 +208,7 @@
         it_shift_egrav: it_shift_egrav {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LC(LG(I))) &kp LS(LEFT_BRACKET) &kp LA(LG(LC(E)))>;
+            bindings = <&kp LA(E) &kp E>;
             label = "IT_SHIFT_EGRAV";
             wait-ms = <30>;
         };
@@ -216,7 +216,7 @@
         it_i: it_i {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LC(LG(I))) &kp EQUAL &kp LA(LG(LC(E)))>;
+            bindings = <&kp LA(GRAVE) &kp I>;
             label = "IT_I";
             wait-ms = <30>;
         };
@@ -224,7 +224,7 @@
         it_o: it_o {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LC(LG(I))) &kp SEMICOLON &kp LA(LG(LC(E)))>;
+            bindings = <&kp LA(GRAVE) &kp O>;
             label = "IT_O";
             wait-ms = <30>;
         };
@@ -232,7 +232,7 @@
         it_u: it_u {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LC(LG(I))) &kp BACKSLASH &kp LA(LG(LC(E)))>;
+            bindings = <&kp LA(GRAVE) &kp U>;
             label = "IT_U";
             wait-ms = <30>;
         };
@@ -240,7 +240,7 @@
         it_a: it_a {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LC(LG(I))) &kp SQT &kp LA(LG(LC(E)))>;
+            bindings = <&kp LA(GRAVE) &kp A>;
             label = "IT_A";
             wait-ms = <30>;
         };
