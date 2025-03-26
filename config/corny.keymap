@@ -114,7 +114,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "CAT_NAV_SH";
             #binding-cells = <0>;
-            bindings = <&ht LEFT_SHIFT LS(LA(LG(SLASH)))>, <&to 2>;
+            bindings = <&ht LEFT_SHIFT LS(LA(LG(SLASH)))>, <&to 6>;
 
             tapping-term-ms = <200>;
         };
@@ -125,6 +125,15 @@
             #binding-cells = <0>;
             tapping-term-ms = <220>;
             bindings = <&ht LEFT_SHIFT LS(LA(LG(SLASH)))>, <&none>;
+        };
+
+        mvmouse: mvmouse {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MVMOUSE";
+            #binding-cells = <0>;
+            bindings = <&lt 2 SPACE>, <&mo 6>;
+
+            tapping-term-ms = <185>;
         };
     };
 
@@ -339,10 +348,10 @@
 
         Colemak {
             bindings = <
-&ht LS(TAB) TAB             &kp Q            &kp W           &kp F                 &kp P           &kp G                               &kp J           &kp L           &kp U                  &kp Y                    &kp SEMI         &kp BSLH
-&ht_bck LA(BSPC) BACKSPACE  &lhmrow LCTRL A  &lhmrow LALT R  &lhmrow LEFT_SHIFT S  &lhmrow LCMD T  &kp D                               &kp H           &rhmrow RCMD N  &rhmrow RIGHT_SHIFT E  &rhmrow RIGHT_ALT I      &rhmrow RCTRL O  &kp SQT
-&cat_nav_sh                 &kp Z            &kp X           &kp C                 &kp V           &kp B           &trans  &kp C_MUTE  &kp K           &kp M           &ht LESS_THAN COMMA    &ht GREATER_THAN PERIOD  &kp FSLH         &kp RSHFT
-                                                             &lt 4 LG(SPACE)       &lt 1 SPACE     &ht LCMD ENTER                      &ht RCMD ENTER  &lt 2 SPACE     &mo 3
+&ht LS(TAB) TAB             &kp Q            &kp W           &kp F                 &kp P           &kp G                              &kp J        &kp L           &kp U                  &kp Y                    &kp SEMI         &kp BSLH
+&ht_bck LA(BSPC) BACKSPACE  &lhmrow LCTRL A  &lhmrow LALT R  &lhmrow LEFT_SHIFT S  &lhmrow LCMD T  &kp D                              &kp H        &rhmrow RCMD N  &rhmrow RIGHT_SHIFT E  &rhmrow RIGHT_ALT I      &rhmrow RCTRL O  &kp SQT
+&cat_nav_sh                 &kp Z            &kp X           &kp C                 &kp V           &kp B           &none  &kp C_MUTE  &kp K        &kp M           &ht LESS_THAN COMMA    &ht GREATER_THAN PERIOD  &kp FSLH         &kp RSHFT
+                                                             &lt 4 LG(SPACE)       &lt 1 SPACE     &ht LCMD ENTER                     &lt 6 ENTER  &lt 2 SPACE     &mo 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -363,10 +372,10 @@
 
         Move {
             bindings = <
-&trans       &trans  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &trans                       &kp DEL       &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &trans    &kp PAGE_UP
-&trans       &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp ENTER                    &kp LG(UP)    &kp LEFT      &kp DOWN  &kp RIGHT      &kp INS   &kp PAGE_DOWN
-&cat_sh_hml  &trans  &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &kp SPACE  &none  &kp LG(A)  &kp LG(DOWN)  &kp LG(LEFT)  &trans    &kp LG(RIGHT)  &kp HOME  &kp END
-                                     &trans          &mkp LCLK        &mkp RCLK                    &trans        &trans        &trans
+&trans       &trans  &trans  &trans  &trans  &trans                       &kp DEL       &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &trans    &kp PAGE_UP
+&trans       &trans  &trans  &trans  &trans  &kp ENTER                    &kp LG(UP)    &kp LEFT      &kp DOWN  &kp RIGHT      &kp INS   &kp PAGE_DOWN
+&cat_sh_hml  &trans  &trans  &trans  &trans  &kp SPACE  &none  &kp LG(A)  &kp LG(DOWN)  &kp LG(LEFT)  &trans    &kp LG(RIGHT)  &kp HOME  &kp END
+                             &trans  &trans  &trans                       &trans        &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
@@ -407,6 +416,18 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        Mouse {
+            label = "Mouse";
+            bindings = <
+&trans          &trans  &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &trans                       &kp DEL       &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &trans    &kp PAGE_UP
+&trans          &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp ENTER                    &kp LG(UP)    &kp LEFT      &kp DOWN  &kp RIGHT      &kp INS   &kp PAGE_DOWN
+&kp LEFT_SHIFT  &trans  &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &kp SPACE  &none  &kp LG(A)  &kp LG(DOWN)  &kp LG(LEFT)  &trans    &kp LG(RIGHT)  &kp HOME  &kp END
+                                        &trans          &mkp LCLK        &mkp RCLK                    &trans        &trans        &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
     };
 
