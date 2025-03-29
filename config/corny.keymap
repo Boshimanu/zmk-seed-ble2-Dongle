@@ -124,7 +124,7 @@
             label = "CAT_SH_HML";
             #binding-cells = <0>;
             tapping-term-ms = <220>;
-            bindings = <&ht LEFT_SHIFT LS(LA(LG(SLASH)))>, <&none>;
+            bindings = <&ht LEFT_SHIFT LS(LA(LG(SLASH)))>, <&to 0>;
         };
 
         mvmouse: mvmouse {
@@ -406,7 +406,7 @@
             bindings = <
 &trans       &trans  &trans  &trans  &trans  &trans                       &kp DEL       &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &trans    &kp PAGE_UP
 &trans       &trans  &trans  &trans  &trans  &kp ENTER                    &kp LG(UP)    &kp LEFT      &kp DOWN  &kp RIGHT      &kp INS   &kp PAGE_DOWN
-&cat_sh_hml  &trans  &trans  &trans  &trans  &kp SPACE  &none  &kp LG(A)  &kp LG(DOWN)  &kp LG(LEFT)  &trans    &kp LG(RIGHT)  &kp HOME  &kp END
+&cat_nav_sh  &trans  &trans  &trans  &trans  &kp SPACE  &none  &kp LG(A)  &kp LG(DOWN)  &kp LG(LEFT)  &trans    &kp LG(RIGHT)  &kp HOME  &kp END
                              &trans  &trans  &trans                       &trans        &trans        &trans
             >;
 
