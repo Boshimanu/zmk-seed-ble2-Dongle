@@ -203,6 +203,38 @@
             require-prior-idle-ms = <50>;
             layers = <0>;
         };
+
+        ctrl_cmd_left {
+            bindings = <&kp LC(LCMD)>;
+            key-positions = <16 13>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
+            layers = <0>;
+        };
+
+        cmd_ctrl_right {
+            bindings = <&kp RC(RCMD)>;
+            key-positions = <19 22>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
+            layers = <0>;
+        };
+
+        alt_cmd_right {
+            bindings = <&kp RA(RCMD)>;
+            key-positions = <19 21>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
+            layers = <0>;
+        };
+
+        ctrl_cmd_left {
+            bindings = <&kp LA(LCMD)>;
+            key-positions = <16 14>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
+            layers = <0>;
+        };
     };
 
     macros {
