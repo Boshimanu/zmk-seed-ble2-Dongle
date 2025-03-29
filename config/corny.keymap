@@ -228,7 +228,7 @@
             layers = <0>;
         };
 
-        ctrl_cmd_left {
+        alt_cmd_left {
             bindings = <&kp LA(LCMD)>;
             key-positions = <16 14>;
             timeout-ms = <30>;
