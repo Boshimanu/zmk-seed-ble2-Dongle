@@ -235,6 +235,22 @@
             require-prior-idle-ms = <50>;
             layers = <0>;
         };
+
+        alt+shift-left {
+            bindings = <&kp LA(LCMD)>;
+            key-positions = <14 15>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
+            layers = <0>;
+        };
+
+        alt+shift-right {
+            bindings = <&kp LA(LCMD)>;
+            key-positions = <20 21>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <50>;
+            layers = <0>;
+        };
     };
 
     macros {
