@@ -142,7 +142,7 @@
             #binding-cells = <0>;
             bindings = <&lt 4 LG(SPACE)>, <&kp LC(LG(SPACE))>;
 
-            tapping-term-ms = <175>;
+            tapping-term-ms = <200>;
         };
     };
 
