@@ -202,7 +202,7 @@
             key-positions = <15 16>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         cmd_shift_right {
@@ -210,7 +210,7 @@
             key-positions = <20 19>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         ctrl_cmd_left {
@@ -218,7 +218,7 @@
             key-positions = <16 13>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         cmd_ctrl_right {
@@ -226,7 +226,7 @@
             key-positions = <19 22>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         alt_cmd_right {
@@ -234,7 +234,7 @@
             key-positions = <19 21>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         alt_cmd_left {
@@ -242,7 +242,7 @@
             key-positions = <16 14>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         alt+shift-left {
@@ -250,7 +250,7 @@
             key-positions = <14 15>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         alt+shift-right {
@@ -258,7 +258,7 @@
             key-positions = <20 21>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <0>;
+            layers = <1 0>;
         };
     };
 
