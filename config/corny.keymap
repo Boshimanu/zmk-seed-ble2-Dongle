@@ -246,7 +246,7 @@
         };
 
         alt+shift-left {
-            bindings = <&kp LA(LCMD)>;
+            bindings = <&kp LA(LEFT_SHIFT)>;
             key-positions = <14 15>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
@@ -254,7 +254,7 @@
         };
 
         alt+shift-right {
-            bindings = <&kp LA(LCMD)>;
+            bindings = <&kp RA(RIGHT_SHIFT)>;
             key-positions = <20 21>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
