@@ -194,7 +194,7 @@
             key-positions = <24 25>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <0 1 2>;
+            layers = <0 1 2 6>;
         };
 
         cmd_shift_left {
@@ -202,7 +202,7 @@
             key-positions = <15 16>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <0 1 2 4 3>;
+            layers = <0 1>;
         };
 
         cmd_shift_right {
