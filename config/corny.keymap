@@ -105,7 +105,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DT_AMETH";
             #binding-cells = <0>;
-            bindings = <&kp LA(LS(O))>, <&kp LA(LS(D))>, <&kp LA(LS(J))>;
+            bindings = <&kp LA(LS(O))>, <&kp LA(LS(D))>, <&kp LA(LS(LC(J)))>;
 
             tapping-term-ms = <185>;
         };
