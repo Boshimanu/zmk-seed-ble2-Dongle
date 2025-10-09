@@ -202,7 +202,7 @@
             key-positions = <15 16>;
             timeout-ms = <30>;
             require-prior-idle-ms = <50>;
-            layers = <0 1>;
+            layers = <0 1 2 4 3>;
         };
 
         cmd_shift_right {
