@@ -160,6 +160,15 @@
             #binding-cells = <0>;
             bindings = <&kp RIGHT_SHIFT>, <&to 0>;
         };
+
+        Ploopy: Ploopy {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PLOOPY";
+            #binding-cells = <0>;
+            bindings = <&lt 8 ENTER>, <&kp LGUI>;
+
+            tapping-term-ms = <185>;
+        };
     };
 
     combos {
@@ -453,10 +462,10 @@
 
         Colemak {
             bindings = <
-&ht LS(TAB) TAB             &kp Q            &kp W           &kp F                 &kp P           &kp G                                         &kp J        &kp L           &kp U                  &kp Y                    &kp SEMI         &kp BSLH
-&ht_bck LA(BSPC) BACKSPACE  &lhmrow LCTRL A  &lhmrow LALT R  &lhmrow LEFT_SHIFT S  &lhmrow LCMD T  &kp D                                         &kp H        &rhmrow RCMD N  &rhmrow RIGHT_SHIFT E  &rhmrow RIGHT_ALT I      &rhmrow RCTRL O  &kp SQT
-&cat_nav_sh                 &kp Z            &kp X           &kp C                 &kp V           &kp B           &none  &kp LS(LG(LA(LC(P))))  &kp K        &kp M           &ht LESS_THAN COMMA    &ht GREATER_THAN PERIOD  &kp FSLH         &Gaming
-                                                             &raycast              &lt 1 SPACE     &ht LCMD ENTER                                &lt 6 ENTER  &lt 2 SPACE     &mo 3
+&ht LS(TAB) TAB             &kp Q            &kp W           &kp F                 &kp P           &kp G                                  &kp J        &kp L           &kp U                  &kp Y                    &kp SEMI         &kp BSLH
+&ht_bck LA(BSPC) BACKSPACE  &lhmrow LCTRL A  &lhmrow LALT R  &lhmrow LEFT_SHIFT S  &lhmrow LCMD T  &kp D                                  &kp H        &rhmrow RCMD N  &rhmrow RIGHT_SHIFT E  &rhmrow RIGHT_ALT I      &rhmrow RCTRL O  &kp SQT
+&cat_nav_sh                 &kp Z            &kp X           &kp C                 &kp V           &kp B    &none  &kp LS(LG(LA(LC(P))))  &kp K        &kp M           &ht LESS_THAN COMMA    &ht GREATER_THAN PERIOD  &kp FSLH         &Gaming
+                                                             &raycast              &lt 1 SPACE     &Ploopy                                &lt 6 ENTER  &lt 2 SPACE     &mo 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
