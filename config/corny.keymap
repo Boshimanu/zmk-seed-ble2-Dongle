@@ -543,6 +543,15 @@
                          &kp LCTRL  &kp LALT  &kp SPACE                  &kp ENTER  &kp N1  &kp N2
             >;
         };
+
+        Ploopy {
+            bindings = <
+&kp HOME       &ht LC(A) LG(A)  &trans          &msc SCRL_UP    &kp DELETE       &kp END                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp PG_UP      &kp LCTRL        &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp LSHFT                  &trans  &trans  &trans  &trans  &trans  &trans
+&kp PAGE_DOWN  &kp LALT         &mkp LCLK       &mkp MCLK       &mkp RCLK        &kp LGUI   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                                &trans          &trans           &trans                     &trans  &trans  &trans
+            >;
+        };
     };
 
     conditional_layers {
