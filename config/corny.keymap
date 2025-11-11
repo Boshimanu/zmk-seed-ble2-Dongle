@@ -40,18 +40,6 @@
             flavor = "balanced";
         };
 
-        as: as {
-            compatible = "zmk,behavior-hold-tap";
-            label = "AS";
-            bindings = <&none>, <&none>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <145>;
-            quick-tap-ms = <50>;
-            require-prior-idle-ms = <50>;
-            flavor = "balanced";
-        };
-
         lhmrow: lhmrow {
             compatible = "zmk,behavior-hold-tap";
             label = "LHMROW";
@@ -127,15 +115,6 @@
             bindings = <&ht LEFT_SHIFT LS(LA(LG(SLASH)))>, <&to 0>;
         };
 
-        mvmouse: mvmouse {
-            compatible = "zmk,behavior-tap-dance";
-            label = "MVMOUSE";
-            #binding-cells = <0>;
-            bindings = <&lt 2 SPACE>, <&mo 6>;
-
-            tapping-term-ms = <185>;
-        };
-
         raycast: raycast {
             compatible = "zmk,behavior-tap-dance";
             label = "RAYCAST";
@@ -168,6 +147,18 @@
             bindings = <&lt 8 ENTER>, <&kp LGUI>;
 
             tapping-term-ms = <185>;
+        };
+
+        qwfp: qwfp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "QWFP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <50>;
+            require-prior-idle-ms = <50>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -462,7 +453,7 @@
 
         Colemak {
             bindings = <
-&ht LS(TAB) TAB             &kp Q            &kp W           &kp F                 &kp P           &kp G                                          &kp J        &kp L           &kp U                  &kp Y                    &kp SEMI         &kp BSLH
+&ht LS(TAB) TAB             &qwfp LG(Q) Q    &qwfp LG(W) W   &qwfp LG(F) F         &kp P           &kp G                                          &kp J        &kp L           &kp U                  &kp Y                    &kp SEMI         &kp BSLH
 &ht_bck LA(BSPC) BACKSPACE  &lhmrow LCTRL A  &lhmrow LALT R  &lhmrow LEFT_SHIFT S  &lhmrow LCMD T  &kp D                                          &kp H        &rhmrow RCMD N  &rhmrow RIGHT_SHIFT E  &rhmrow RIGHT_ALT I      &rhmrow RCTRL O  &kp SQT
 &cat_nav_sh                 &ht LG(Z) Z      &ht LG(X) X     &ht LG(C) C           &ht LG(V) V     &ht LA(LS(O)) B  &none  &kp LS(LG(LA(LC(P))))  &kp K        &kp M           &ht LESS_THAN COMMA    &ht GREATER_THAN PERIOD  &kp FSLH         &Gaming
                                                              &raycast              &lt 1 SPACE     &Ploopy                                        &lt 6 ENTER  &lt 2 SPACE     &mo 3
