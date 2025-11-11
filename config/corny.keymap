@@ -62,7 +62,7 @@
             quick-tap-ms = <30>;
             require-prior-idle-ms = <100>;
             flavor = "balanced";
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 32 33 34 35 36 37 41 42 43>;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 32 33 34 35 36 37 41 42 43 0>;
         };
 
         rhmrow: rhmrow {
@@ -75,7 +75,7 @@
             quick-tap-ms = <30>;
             require-prior-idle-ms = <100>;
             flavor = "balanced";
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 30 38 39 40>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 38 39 40>;
         };
 
         mk_capt: mk_capt {
@@ -556,8 +556,8 @@
         Ploopy {
             bindings = <
 &kp HOME       &ht LC(A) LG(A)  &kp LC(UP_ARROW)  &msc SCRL_UP    &kp DELETE       &kp END                    &trans  &trans  &trans  &trans  &trans  &trans
-&kp PG_UP      &kp LCTRL        &msc SCRL_LEFT    &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp LSHFT                  &trans  &trans  &trans  &trans  &trans  &trans
-&kp PAGE_DOWN  &kp LALT         &mkp LCLK         &mkp MCLK       &mkp RCLK        &kp LGUI   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp PG_UP      &kp LCTRL        &mkp LCLK         &msc SCRL_DOWN  &mkp RCLK        &kp LSHFT                  &trans  &trans  &trans  &trans  &trans  &trans
+&kp PAGE_DOWN  &kp LALT         &msc SCRL_LEFT    &mkp MCLK       &msc SCRL_RIGHT  &kp LGUI   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                                   &trans          &trans           &trans                     &trans  &trans  &trans
             >;
         };
