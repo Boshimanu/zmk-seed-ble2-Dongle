@@ -501,10 +501,10 @@
 
         Emoji {
             bindings = <
-&trans  &trans  &elove   &efp           &ehmmm         &trans                                &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &laugh  &esmile  &eok           &ethank        &esad                                 &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans   &kp LS(LG(G))  &kp LS(LG(G))  &trans  &none  &kp LS(LA(LC(LG(P))))  &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans         &trans         &trans                                &trans  &trans  &trans
+&trans  &trans  &elove     &efp       &ehmmm         &trans                                   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &laugh  &esmile    &eok       &ethank        &esad                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp SPACE  &kp SPACE  &kp LS(LG(G))  &kp SPACE  &none  &kp LS(LA(LC(LG(P))))  &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans     &trans         &trans                                   &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LS(LC(LG(LA(M)))) LS(LA(LC(LG(N))))>;
