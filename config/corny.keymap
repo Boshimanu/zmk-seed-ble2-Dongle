@@ -144,7 +144,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "PLOOPY";
             #binding-cells = <0>;
-            bindings = <&lt 8 ENTER>, <&kp LGUI>;
+            bindings = <&ht LGUI ENTER>, <&mo 8>, <&kp SPACE>;
 
             tapping-term-ms = <185>;
         };
