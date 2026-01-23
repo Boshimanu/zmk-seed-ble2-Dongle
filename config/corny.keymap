@@ -128,7 +128,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "GAMING";
             #binding-cells = <0>;
-            bindings = <&kp RSHIFT>, <&to 7>;
+            bindings = <&kp LA(LC(G))>, <&to 7>;
 
             tapping-term-ms = <175>;
         };
@@ -165,9 +165,11 @@
             compatible = "zmk,behavior-tap-dance";
             label = "WISPER";
             #binding-cells = <0>;
-            bindings = <&ht LA(LC(G)) LC(LA(B))>, <&ht LA(LC(P)) LC(ENTER)>;
+            bindings =
+                <&ht_bck LA(LC(G)) LC(LA(B))>,
+                <&ht_bck LA(LC(P)) LC(ENTER)>;
 
-            tapping-term-ms = <185>;
+            tapping-term-ms = <175>;
         };
     };
 
