@@ -165,7 +165,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "WISPER";
             #binding-cells = <0>;
-            bindings = <&ht LA(LC(G)) LC(LA(B))>, <&ht LA(LC(P)) LA(LC(ENTER))>;
+            bindings = <&ht LA(LC(G)) LC(LA(B))>, <&ht LA(LC(P)) LC(ENTER)>;
 
             tapping-term-ms = <185>;
         };
