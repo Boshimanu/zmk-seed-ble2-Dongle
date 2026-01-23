@@ -144,7 +144,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "PLOOPY";
             #binding-cells = <0>;
-            bindings = <&ht LGUI ENTER>, <&mo 8>, <&kp SPACE>;
+            bindings = <&ht LGUI ENTER>, <&mo 8>;
 
             tapping-term-ms = <185>;
         };
@@ -159,6 +159,15 @@
             quick-tap-ms = <50>;
             require-prior-idle-ms = <50>;
             flavor = "tap-preferred";
+        };
+
+        Wisper: Wisper {
+            compatible = "zmk,behavior-tap-dance";
+            label = "WISPER";
+            #binding-cells = <0>;
+            bindings = <&ht LA(LC(V)) LC(LA(B))>, <&kp LA(LC(C))>;
+
+            tapping-term-ms = <185>;
         };
     };
 
@@ -455,7 +464,7 @@
             bindings = <
 &ht LS(TAB) TAB             &qwfp LG(Q) Q    &qwfp LG(W) W   &qwfp LG(F) F         &kp P           &kp G                                          &kp J        &kp L           &kp U                  &kp Y                    &kp SEMI         &kp BSLH
 &ht_bck LA(BSPC) BACKSPACE  &lhmrow LCTRL A  &lhmrow LALT R  &lhmrow LEFT_SHIFT S  &lhmrow LCMD T  &kp D                                          &kp H        &rhmrow RCMD N  &rhmrow RIGHT_SHIFT E  &rhmrow RIGHT_ALT I      &rhmrow RCTRL O  &kp SQT
-&cat_nav_sh                 &ht LG(Z) Z      &ht LG(X) X     &ht LG(C) C           &ht LG(V) V     &ht LA(LS(O)) B  &none  &kp LS(LG(LA(LC(P))))  &kp K        &kp M           &ht LESS_THAN COMMA    &ht GREATER_THAN PERIOD  &kp FSLH         &Gaming
+&Wisper                     &ht LG(Z) Z      &ht LG(X) X     &ht LG(C) C           &ht LG(V) V     &ht LA(LS(O)) B  &none  &kp LS(LG(LA(LC(P))))  &kp K        &kp M           &ht LESS_THAN COMMA    &ht GREATER_THAN PERIOD  &kp FSLH         &Gaming
                                                              &raycast              &lt 1 SPACE     &Ploopy                                        &lt 6 ENTER  &lt 2 SPACE     &mo 3
             >;
 
